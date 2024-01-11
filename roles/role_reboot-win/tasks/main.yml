@@ -1,0 +1,8 @@
+---
+- name: Reboot Windows Host
+  win_reboot:
+    reboot_timeout: 600 # Adjust the timeout as needed (in seconds)
+  async: 0
+  poll: 0
+  ignore_errors: yes
+

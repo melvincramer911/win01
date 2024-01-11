@@ -1,11 +1,9 @@
 ---
-# tasks file for template
+  - name: test powershell
+    win_shell: |
+              get-host
+    register: result_get_host
 
-- hosts: all
-  tasks:
-    - ansible.builtin.import_role:
-        name: role_test-win-ssh
-
-
-
-#
+  - name: display result_get_host
+    debug:
+      var: result_get_host
