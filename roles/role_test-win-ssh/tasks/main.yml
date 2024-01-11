@@ -1,0 +1,11 @@
+---
+# tasks file for template
+
+- hosts: all
+  tasks:
+    - ansible.builtin.import_role:
+        name: role_test-win-ssh
+
+
+
+#
