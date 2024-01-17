@@ -3,7 +3,7 @@
 #alias ccdbash="cd /home/build/ansible-playbooks/bash"
 
 
-ccd() {
+aa() {
     case "$1" in
         "bash")
             cd /home/build/ansible-playbooks/bash
@@ -17,7 +17,7 @@ ccd() {
  	    ;;
 
         "push")
-            cp -f  /home/build/.bashrc  /home/build/ansible-playbooks/outside/bashrc.txt
+            cp   /home/build/.bashrc  /home/build/ansible-playbooks/outside/bashrc.txt
 	    cd /home/build/ansible-playbooks
             /home/build/ansible-playbooks/push-github.sh $1
  	    ;;
@@ -31,7 +31,7 @@ ccd() {
 
 
         *)
-            echo "Invalid argument. Usage: ccd <directory>"
+            echo "bash, task, home, push"
             ;;
     esac
 }
