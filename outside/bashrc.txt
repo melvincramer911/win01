@@ -19,7 +19,7 @@ aa() {
         "push")
             cp   /home/build/.bashrc  /home/build/ansible-playbooks/outside/bashrc.txt
 	    cd /home/build/ansible-playbooks
-            /home/build/ansible-playbooks/push-github.sh $1
+            /home/build/ansible-playbooks/push-github.sh $2
  	    ;;
 
 
